@@ -146,7 +146,7 @@ module "codebuild" {
   source                                 = "./modules/codebuild"
   codebuild_project_terraform_plan_name  = "TerraformPlan"
   codebuild_project_terraform_apply_name = "TerraformApply"
-  s3_logging_bucket_id                   = "ci-cd-functions"
+  s3_logging_bucket_id                   = "ci-cd-functions-2023"
   codebuild_iam_role_arn                 = module.iam.codebuild_iam_role_arn
   s3_logging_bucket                      = "ci-cd-functions"
 }
