@@ -155,7 +155,7 @@ module "codebuild" {
 module "codepipeline" {
   source                               = "./modules/codepipeline"
   tf_codepipeline_name                 = "TerraformCodePipeline"
-  tf_codepipeline_artifact_bucket_name = "ci-cd-functions"
+  tf_codepipeline_artifact_bucket_name = "ci-cd-functions-2023"
   tf_codepipeline_role_name            = "TerraformCodePipelineIamRole"
   tf_codepipeline_role_policy_name     = "TerraformCodePipelineIamRolePolicy"
   terraform_codecommit_repo_name       = module.codecommit.terraform_codecommit_repo_name
