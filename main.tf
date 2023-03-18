@@ -119,7 +119,7 @@ module "hello-world-lambda" {
 
 # Upload zip to s3 
 resource "aws_s3_bucket_object" "file_upload" {
-  bucket = "ci-cd-functions"
+  bucket = "ci-cd-functions-2023"
   key    = local.zip_file
   source = "${path.module}/${local.zip_file}"
 }
