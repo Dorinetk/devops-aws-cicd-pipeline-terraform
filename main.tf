@@ -127,8 +127,8 @@ resource "aws_s3_bucket_object" "file_upload" {
 ## Setup IAM account for deployment
 module "iam" {
   source                              = "./modules/iam"
-  s3_tfstate_bucket                   = "ci-cd-functions"
-  s3_logging_bucket_name              = "ci-cd-functions"
+  s3_tfstate_bucket                   = "ci-cd-functions-2023"
+  s3_logging_bucket_name              = "ci-cd-functions-2023"
   codebuild_iam_role_name             = "CodeBuildIamRole"
   codebuild_iam_role_policy_name      = "CodeBuildIamRolePolicy"
   terraform_codecommit_repo_arn       = module.codecommit.terraform_codecommit_repo_arn
